@@ -40,8 +40,8 @@ export class FileComponent implements OnDestroy {
   numOfActiveReadEntries = 0
 
   constructor(
-    private zone: NgZone,
-    private renderer: Renderer
+    public zone: NgZone,
+    public renderer: Renderer
   ) {
     if (!this.customstyle) {
       this.customstyle = 'drop-zone';
